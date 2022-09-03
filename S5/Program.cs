@@ -77,70 +77,70 @@
 // Console.WriteLine("[{0}]", String.Join(",", array));
 
 
-/* Задайте массив. Напишите программу, которая определяет, присутствует ли заданное число в массиве.
-4; массив [6, 7, 19, 345, 3] -> нет
--3; массив [6, 7, 19, 345, 3] -> да */
-// сами сделали:
-int [] array= {6, 7, 19, 345, 3};
-Console.WriteLine("Введите число ");
-int num = Convert.ToInt32(Console.ReadLine());
-for (int i = 0; i < array.Length; i++)
-{
-    if (array[i]==num)
-    {
-        Console.WriteLine("Да");
-        break;
-    }
-    else 
-    {
-        Console.WriteLine("Нет");
-        break;
-    }
-}
+// /* Задайте массив. Напишите программу, которая определяет, присутствует ли заданное число в массиве.
+// 4; массив [6, 7, 19, 345, 3] -> нет
+// -3; массив [6, 7, 19, 345, 3] -> да */
+// // сами сделали:
+// int [] array= {6, 7, 19, 345, 3};
+// Console.WriteLine("Введите число ");
+// int num = Convert.ToInt32(Console.ReadLine());
+// for (int i = 0; i < array.Length; i++)
+// {
+//     if (array[i]==num)
+//     {
+//         Console.WriteLine("Да");
+//         break;
+//     }
+//     else 
+//     {
+//         Console.WriteLine("Нет");
+//         break;
+//     }
+// }
 
-// чужой вариант:
-Console.WriteLine("Введите число");
-int num = Convert.ToInt32(Console.ReadLine());
-string result = "нет";
-int [] array= {6, 7, 19, 345, 3};
-for(int i=0; i < array.Length; i++)
-{
-	if(array[i]== num)
-	{
-		result = "да";
-	}
+// // чужой вариант:
+// Console.WriteLine("Введите число");
+// int num = Convert.ToInt32(Console.ReadLine());
+// string result = "нет";
+// int [] array= {6, 7, 19, 345, 3};
+// for(int i=0; i < array.Length; i++)
+// {
+// 	if(array[i]== num)
+// 	{
+// 		result = "да";
+// 	}
 	
-}
-Console.WriteLine(result);
+// }
+// Console.WriteLine(result);
 
 
-// еще чужой вариант
-int size = Convert.ToInt32(Console.ReadLine());
-int[] array = new int[size];
+// // еще чужой вариант
+// int size = Convert.ToInt32(Console.ReadLine());
+// int[] array = new int[size];
 
-for (int i = 0; i < size; i++)
-	{
-	array[i] = new Random().Next(-9,10);
-	}
+// for (int i = 0; i < size; i++)
+// 	{
+// 	array[i] = new Random().Next(-9,10);
+// 	}
 
-Console.WriteLine("[{0}]",String.Join(";",array));
+// Console.WriteLine("[{0}]",String.Join(";",array));
 
 
-Console.WriteLine("Введите искомое число ");
-int necessaryNumber = Convert.ToInt32(Console.ReadLine());
-int count = 0;
-for (int i = 0; i < size; i++)
-	{
-		if(array[i] == necessaryNumber)
-		{
-			count++;
-		}
-	}
-if (count > 0) 
-	{
-	Console.WriteLine($"Это число найдено в количестве: {count}");
-	}
-else
-{
-	Console.WriteLine("Чисел нет");
-}
+// Console.WriteLine("Введите искомое число ");
+// int necessaryNumber = Convert.ToInt32(Console.ReadLine());
+// int count = 0;
+// for (int i = 0; i < size; i++)
+// 	{
+// 		if(array[i] == necessaryNumber)
+// 		{
+// 			count++;
+// 		}
+// 	}
+// if (count > 0) 
+// 	{
+// 	Console.WriteLine($"Это число найдено в количестве: {count}");
+// 	}
+// else
+// {
+// 	Console.WriteLine("Чисел нет");
+// }
